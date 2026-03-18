@@ -353,6 +353,124 @@
             filter: drop-shadow(0 0 40px rgba(41,144,240,0.15));
         }
 
+        /* ========== SECTION: CODE ========== */
+        .section-code {
+            padding: 120px 0;
+            background: #030509;
+        }
+
+        .code-intro {
+            font-size: 18px;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 64px;
+            line-height: 1.7;
+        }
+
+        .code-intro strong {
+            color: #2990F0;
+            font-weight: 700;
+        }
+
+        .code-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 48px;
+        }
+
+        .code-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: border-color 0.3s, background 0.3s;
+        }
+
+        .code-card:hover {
+            border-color: rgba(41,144,240,0.3);
+            background: rgba(41,144,240,0.04);
+        }
+
+        .code-letter {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .code-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 10px;
+        }
+
+        .code-desc {
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.65;
+        }
+
+        .code-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 24px 32px;
+            background: rgba(41,144,240,0.05);
+            border: 1px solid rgba(41,144,240,0.15);
+            border-radius: 12px;
+        }
+
+        .code-flow-item {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.55);
+            letter-spacing: 1px;
+        }
+
+        .code-flow-letter {
+            font-weight: 900;
+            font-size: 18px;
+            background: linear-gradient(135deg, #2990F0 0%, #70c2ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .code-flow-arrow {
+            color: rgba(41,144,240,0.4);
+            font-size: 18px;
+        }
+
+        @media (max-width: 968px) {
+            .code-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 560px) {
+            .code-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .code-flow {
+                gap: 10px;
+                font-size: 14px;
+            }
+        }
+
         /* ========== SECTION: AR CASES ========== */
         .ar-cases-grid {
             display: grid;
@@ -1832,6 +1950,56 @@
             <p class="body-text fade-in">Que muestra, paso a paso, cómo crear, estructurar, posicionar y escalar una marca online. Todo esto fue hecho en la práctica, con una marca creada desde cero, con cada decisión, error y acierto documentados dentro del curso.</p>
             <p class="highlight-text fade-in">No aprendés lo que "funciona en teoría". Aprendés lo que ya funcionó de verdad.</p>
             <a href="#oferta" class="cta-btn fade-in">QUIERO APLICAR EL MÉTODO MARCA</a>
+        </div>
+    </section>
+
+    <!-- CODE METHOD -->
+    <section class="section-code" id="metodo">
+        <div class="container">
+            <p class="section-label fade-in">// EL MÉTODO</p>
+            <h2 class="headline fade-in">El sistema detrás de cada resultado</h2>
+            <p class="code-intro fade-in">Método Marca no es una colección de videos. Es un sistema de 4 pilares diseñado para construir marcas que escalan. Lo llamamos <strong>CODE</strong>.</p>
+
+            <div class="code-grid">
+                <div class="code-card fade-in">
+                    <div class="code-letter">C</div>
+                    <div class="code-content">
+                        <h3 class="code-title">CONECTAR</h3>
+                        <p class="code-desc">Definís la esencia de tu marca: identidad, arquetipo, storytelling y el porqué que hace que la gente elija vos sobre cualquier competidor.</p>
+                    </div>
+                </div>
+                <div class="code-card fade-in">
+                    <div class="code-letter">O</div>
+                    <div class="code-content">
+                        <h3 class="code-title">OFERTAR</h3>
+                        <p class="code-desc">Construís una oferta irresistible. Aprendés psicología de precios, value stacking y cómo hacer que el precio sea lo último en lo que el cliente piensa.</p>
+                    </div>
+                </div>
+                <div class="code-card fade-in">
+                    <div class="code-letter">D</div>
+                    <div class="code-content">
+                        <h3 class="code-title">DIFERENCIAR</h3>
+                        <p class="code-desc">Posicionás tu marca para que deje de competir por precio. Prueba social, comunidad, influencers y experiencia del cliente como ventaja competitiva.</p>
+                    </div>
+                </div>
+                <div class="code-card fade-in">
+                    <div class="code-letter">E</div>
+                    <div class="code-content">
+                        <h3 class="code-title">ESCALAR</h3>
+                        <p class="code-desc">Con la base sólida, escalás con tráfego pago. Meta Ads, Google Ads, analytics y la estructura que sostiene el crecimiento sin romper la operación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-flow fade-in">
+                <span class="code-flow-item"><span class="code-flow-letter">C</span>onectar</span>
+                <span class="code-flow-arrow">→</span>
+                <span class="code-flow-item"><span class="code-flow-letter">O</span>fertar</span>
+                <span class="code-flow-arrow">→</span>
+                <span class="code-flow-item"><span class="code-flow-letter">D</span>iferenciar</span>
+                <span class="code-flow-arrow">→</span>
+                <span class="code-flow-item"><span class="code-flow-letter">E</span>scalar</span>
+            </div>
         </div>
     </section>
 
