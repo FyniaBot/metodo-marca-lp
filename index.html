@@ -369,11 +369,71 @@
             padding: 0;
         }
 
-        .case-label {
-            font-size: 16px;
-            font-weight: 600;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 20px;
+        .case-logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .case-logo {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        .case-flag {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 500;
+        }
+
+        .case-proof {
+            margin-top: 28px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 20px;
+        }
+
+        .case-proof-img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .case-proof-caption {
+            font-size: 13px;
+            color: rgba(255,255,255,0.35);
+            margin-top: 8px;
+        }
+
+        .sunkids-proof {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            margin: 32px 0 48px;
+            padding: 32px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+        }
+
+        .sunkids-img {
+            width: 240px;
+            flex-shrink: 0;
+            border-radius: 12px;
+        }
+
+        .sunkids-handle {
+            font-size: 14px;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 12px;
+        }
+
+        .sunkids-desc {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.7;
         }
 
         .case-stat {
@@ -910,6 +970,16 @@
         }
 
         @media (max-width: 768px) {
+            .sunkids-proof {
+                flex-direction: column;
+            }
+            .sunkids-img {
+                width: 100%;
+                max-width: 320px;
+            }
+            .case-proof-img {
+                max-width: 100%;
+            }
             .nav-links {
                 display: none;
                 position: absolute;
@@ -1076,7 +1146,10 @@
 
             <div class="cases-grid">
                 <div class="case-card fade-in">
-                    <p class="case-label">Green is Good — Brasil 🇧🇷</p>
+                    <div class="case-logo-wrap">
+                        <img src="assets/green-is-good-logo.avif" alt="Green is Good" class="case-logo">
+                        <span class="case-flag">🇧🇷 Brasil</span>
+                    </div>
                     <div class="case-stat">
                         <span class="counter" data-target="200">0</span><span class="case-stat-suffix">K USD</span>
                     </div>
@@ -1086,9 +1159,16 @@
                         <li>Presupuesto inicial de $5.000 USD</li>
                         <li>Solo Anibal y Pietro, sin equipo interno</li>
                     </ul>
+                    <div class="case-proof">
+                        <img src="assets/green-is-good-instagram.jpg" alt="Green is Good Instagram — 34.7K seguidores" class="case-proof-img">
+                        <p class="case-proof-caption">@greenisgood.arg · 34.7K seguidores</p>
+                    </div>
                 </div>
                 <div class="case-card fade-in">
-                    <p class="case-label">GÜM — Argentina 🇦🇷</p>
+                    <div class="case-logo-wrap">
+                        <img src="assets/gum-logo2.webp" alt="GÜM" class="case-logo">
+                        <span class="case-flag">🇦🇷 Argentina</span>
+                    </div>
                     <div class="case-stat">
                         <span class="counter" data-target="40">0</span><span class="case-stat-suffix">K USD</span>
                     </div>
@@ -1098,12 +1178,22 @@
                         <li>Zero facturación y seguidores al inicio</li>
                         <li>Foco en influencers</li>
                     </ul>
+                    <div class="case-proof">
+                        <img src="assets/gum-instagram.jpg" alt="GÜM Instagram — 16.1K seguidores" class="case-proof-img">
+                        <p class="case-proof-caption">@gum.argentina · 16.1K seguidores</p>
+                    </div>
                 </div>
             </div>
 
             <div class="major-case fade-in">
                 <h3 class="headline">Nuestro Mayor Case de Éxito:</h3>
-                <p class="body-text">De cero al liderazgo: Construimos la marca más grande de anteojos infantiles de Brasil partiendo de cero, consolidando nuestra posición como referencia en el mercado nacional y expandiéndonos a mercados internacionales.</p>
+                <div class="sunkids-proof fade-in">
+                    <img src="assets/sunkids-instagram.webp" alt="Sunkids Instagram — 427K seguidores" class="sunkids-img">
+                    <div class="sunkids-text">
+                        <p class="sunkids-handle">@sunkidsoficial_ · 427K seguidores</p>
+                        <p class="sunkids-desc">De cero al liderazgo: Construimos la marca más grande de anteojos infantiles de Brasil partiendo de cero, consolidando nuestra posición como referencia en el mercado nacional y expandiéndonos a mercados internacionales.</p>
+                    </div>
+                </div>
 
                 <div class="stats-grid">
                     <div class="stat-item fade-in">
