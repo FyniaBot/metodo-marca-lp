@@ -375,17 +375,36 @@
             border-color: rgba(41,144,240,0.35);
         }
 
-        .ar-case-header {
+        .ar-case-header-centered {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            padding: 20px 24px 16px;
+            gap: 16px;
+            padding: 24px 24px 20px;
             border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
+        .ar-case-logo-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 10px;
+        }
+
+        .ar-logo-white {
+            background: #ffffff;
+        }
+
+        .ar-logo-dark {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
         .ar-case-logo {
-            height: 36px;
+            height: 44px;
             width: auto;
+            max-width: 160px;
             object-fit: contain;
         }
 
@@ -467,18 +486,15 @@
         .ar-case-social {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
             padding: 16px 24px 20px;
             border-top: 1px solid rgba(255,255,255,0.06);
             margin-top: auto;
         }
 
-        .ar-case-ig {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            object-position: top center;
-            border-radius: 10px;
+        .ar-ig-icon {
+            width: 32px;
+            height: 32px;
             flex-shrink: 0;
         }
 
@@ -491,18 +507,8 @@
         .ar-case-ig-followers {
             font-size: 13px;
             color: rgba(255,255,255,0.45);
-            margin: 2px 0 6px;
+            margin-top: 2px;
         }
-
-        .ar-case-ig-link {
-            font-size: 13px;
-            color: #2990F0;
-            text-decoration: none;
-            font-weight: 600;
-            transition: opacity 0.2s;
-        }
-
-        .ar-case-ig-link:hover { opacity: 0.75; }
 
         /* Sunkids strip */
         .sunkids-strip {
@@ -1743,9 +1749,11 @@
             <div class="ar-cases-grid">
                 <!-- Green is Good -->
                 <div class="ar-case-card fade-in">
-                    <div class="ar-case-header">
-                        <img src="assets/green-is-good-logo.webp" alt="Green is Good" class="ar-case-logo">
+                    <div class="ar-case-header-centered">
                         <div class="ar-case-tag">🇦🇷 Caso Argentina</div>
+                        <div class="ar-case-logo-wrap ar-logo-white">
+                            <img src="assets/green-is-good-logo-hq.png" alt="Green is Good" class="ar-case-logo">
+                        </div>
                     </div>
                     <div class="ar-case-body">
                         <div class="ar-case-before">
@@ -1760,20 +1768,21 @@
                         </div>
                     </div>
                     <div class="ar-case-social">
-                        <img src="assets/green-is-good-instagram.jpg" alt="@greenisgood.arg" class="ar-case-ig">
+                        <svg class="ar-ig-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig1)" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="url(#ig1)" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="url(#ig1)"/><defs><linearGradient id="ig1" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#F9CE34"/><stop offset="0.4" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/></linearGradient></defs></svg>
                         <div class="ar-case-ig-info">
                             <p class="ar-case-ig-handle">@greenisgood.arg</p>
                             <p class="ar-case-ig-followers">34.7K seguidores</p>
-                            <a href="https://instagram.com/greenisgood.arg" target="_blank" rel="noopener" class="ar-case-ig-link">Ver el proceso en vivo →</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- GÜM -->
                 <div class="ar-case-card fade-in">
-                    <div class="ar-case-header">
-                        <img src="assets/gum-logo2.webp" alt="GÜM" class="ar-case-logo">
+                    <div class="ar-case-header-centered">
                         <div class="ar-case-tag">🇦🇷 Caso Argentina</div>
+                        <div class="ar-case-logo-wrap ar-logo-dark">
+                            <img src="assets/gum-logo2.webp" alt="GÜM" class="ar-case-logo">
+                        </div>
                     </div>
                     <div class="ar-case-body">
                         <div class="ar-case-before">
@@ -1788,11 +1797,10 @@
                         </div>
                     </div>
                     <div class="ar-case-social">
-                        <img src="assets/gum-instagram-real.jpg" alt="@gum.argentina" class="ar-case-ig">
+                        <svg class="ar-ig-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig2)" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="url(#ig2)" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="url(#ig2)"/><defs><linearGradient id="ig2" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#F9CE34"/><stop offset="0.4" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/></linearGradient></defs></svg>
                         <div class="ar-case-ig-info">
                             <p class="ar-case-ig-handle">@gum.argentina</p>
                             <p class="ar-case-ig-followers">16.1K seguidores</p>
-                            <a href="https://instagram.com/gum.argentina" target="_blank" rel="noopener" class="ar-case-ig-link">Ver el proceso en vivo →</a>
                         </div>
                     </div>
                 </div>
