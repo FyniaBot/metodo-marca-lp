@@ -36,9 +36,37 @@
         }
 
         /* ========== NAVBAR ========== */
-        .navbar {
+        /* ANNOUNCEMENT BAR */
+        .announcement-bar {
             position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            background: linear-gradient(90deg, #003880 0%, #1a6fd8 50%, #003880 100%);
+            background-size: 200% auto;
+            animation: shimmer 4s linear infinite;
+            text-align: center;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .announcement-bar span {
+            opacity: 0.75;
+            font-weight: 400;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 38px;
             left: 0;
             right: 0;
             z-index: 1000;
@@ -143,6 +171,58 @@
         }
 
         /* ========== SECTION LABEL ========== */
+        .hero-social-proof {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 24px;
+            padding: 16px 20px;
+            background: rgba(41, 144, 240, 0.08);
+            border: 1px solid rgba(41, 144, 240, 0.2);
+            border-radius: 10px;
+            max-width: 480px;
+        }
+
+        .proof-avatars {
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        .proof-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #030509;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            margin-left: -8px;
+        }
+
+        .proof-avatar:first-child { margin-left: 0; }
+
+        .proof-text {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+        }
+
+        .proof-text strong {
+            color: #fff;
+        }
+
+        .launch-context {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+            max-width: 600px;
+            margin: 0 auto 16px;
+            text-align: center;
+            font-style: italic;
+        }
+
         .section-label {
             font-size: 14px;
             text-transform: uppercase;
@@ -200,7 +280,7 @@
 
         /* ========== SECTION: HERO ========== */
         .hero {
-            padding-top: 160px;
+            padding-top: 198px;
             padding-bottom: 120px;
             background: #030509;
         }
@@ -1112,6 +1192,11 @@
 </head>
 <body>
 
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        🇦🇷 Primer lanzamiento en Argentina &nbsp;·&nbsp; <span>+2.000 emprendedores en Brasil ya transformaron sus marcas</span>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container">
@@ -1127,14 +1212,25 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content fade-in">
-                <p class="section-label">// MÉTODO MARCA</p>
+                <p class="section-label">🇦🇷 PRIMER LANZAMIENTO EN ARGENTINA · POR PRIMERA VEZ EN ESPAÑOL</p>
                 <h1 class="hero-headline">DE CERO A UNA <span class="gradient-text">MARCA MILLONARIA</span></h1>
-                <p class="hero-sub">El paso a paso real para elegir el producto correcto, construir una marca magnética y estructurar la base que sostiene $200.000 dólares en ventas. Aunque nunca hayas podido escalar antes.</p>
+                <p class="hero-sub">El método que ya transformó más de 2.000 emprendedores en Brasil — ahora disponible por primera vez en español, aplicado en Argentina con casos reales.</p>
                 <ul class="hero-bullets">
                     <li>Curso completo + mentorías + acompañamiento estratégico</li>
                     <li>Acceso inmediato con 7 días de garantía</li>
+                    <li>Precio especial de lanzamiento — solo por tiempo limitado</li>
                 </ul>
-                <a href="#oferta" class="cta-btn">QUIERO ENTRAR AL MÉTODO MARCA AHORA</a>
+                <a href="#oferta" class="cta-btn">QUIERO SER DE LOS PRIMEROS EN ARGENTINA</a>
+                <div class="hero-social-proof">
+                    <div class="proof-avatars">
+                        <div class="proof-avatar" style="background:#1a4a8a;">A</div>
+                        <div class="proof-avatar" style="background:#1a6fd8;">M</div>
+                        <div class="proof-avatar" style="background:#0d3a6e;">L</div>
+                        <div class="proof-avatar" style="background:#2990F0;">R</div>
+                        <div class="proof-avatar" style="background:#1a5ca0;">C</div>
+                    </div>
+                    <p class="proof-text"><strong>+2.000 emprendedores</strong> en Brasil ya lo aplicaron · Ahora llegó a Argentina</p>
+                </div>
             </div>
             <div class="hero-image fade-in">FOTO ANIBAL AQUÍ</div>
         </div>
@@ -1414,7 +1510,8 @@
     <!-- OFERTA FINAL -->
     <section class="section-oferta" id="oferta">
         <div class="container">
-            <p class="section-label fade-in">// PRECIO DE LANZAMIENTO</p>
+            <p class="section-label fade-in">// PRECIO DE LANZAMIENTO ARGENTINA 🇦🇷</p>
+            <p class="launch-context fade-in">En Brasil el curso ya está consolidado con más de 2.000 alumnos. Este es el precio de entrada para los primeros en Argentina — después sube.</p>
             <h2 class="headline fade-in">Todo esto por <span class="gradient-text">$87 USD</span></h2>
 
             <div class="checklist-grid fade-in">
