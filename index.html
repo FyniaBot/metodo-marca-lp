@@ -353,6 +353,245 @@
             filter: drop-shadow(0 0 40px rgba(41,144,240,0.15));
         }
 
+        /* ========== SECTION: AR CASES ========== */
+        .ar-cases-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-bottom: 48px;
+        }
+
+        .ar-case-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.3s;
+        }
+
+        .ar-case-card:hover {
+            border-color: rgba(41,144,240,0.35);
+        }
+
+        .ar-case-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .ar-case-logo {
+            height: 36px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .ar-case-tag {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #2990F0;
+            background: rgba(41,144,240,0.1);
+            border: 1px solid rgba(41,144,240,0.2);
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .ar-case-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .ar-case-before, .ar-case-after {
+            padding: 14px 16px;
+            border-radius: 10px;
+        }
+
+        .ar-case-before {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .ar-case-after {
+            background: rgba(41,144,240,0.07);
+            border: 1px solid rgba(41,144,240,0.2);
+        }
+
+        .ar-label {
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: 6px;
+        }
+
+        .ar-case-before p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .ar-case-arrow {
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255,255,255,0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .ar-case-stat {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+
+        .ar-stat-usd {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .ar-case-stat-sub {
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+        }
+
+        .ar-case-social {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 24px 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: auto;
+        }
+
+        .ar-case-ig {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .ar-case-ig-handle {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .ar-case-ig-followers {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+            margin: 2px 0 6px;
+        }
+
+        .ar-case-ig-link {
+            font-size: 13px;
+            color: #2990F0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .ar-case-ig-link:hover { opacity: 0.75; }
+
+        /* Sunkids strip */
+        .sunkids-strip {
+            background: rgba(255,255,255,0.025);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px;
+            padding: 32px 36px;
+            text-align: center;
+        }
+
+        .sunkids-strip-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.3);
+            margin-bottom: 24px;
+        }
+
+        .sunkids-strip-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .sunkids-strip-logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.85;
+        }
+
+        .sunkids-strip-stats {
+            display: flex;
+            gap: 32px;
+        }
+
+        .strip-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .strip-num {
+            font-size: 26px;
+            font-weight: 800;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .strip-num small {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .strip-desc {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 0.5px;
+        }
+
+        .sunkids-strip-text {
+            font-size: 15px;
+            color: rgba(255,255,255,0.45);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .ar-cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sunkids-strip-inner {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .sunkids-strip-stats {
+                gap: 20px;
+            }
+
+            .ar-case-stat {
+                font-size: 40px;
+            }
+        }
+
         /* ========== SECTION: PROBLEMA ========== */
         .section-problema {
             background: #05080f;
@@ -1497,80 +1736,89 @@
     <!-- CASES -->
     <section class="section-cases" id="resultados">
         <div class="container">
-            <p class="section-label fade-in">// CASES</p>
-            <h2 class="headline fade-in">Construyendo Nuevos Cases en Tiempo Real</h2>
-            <p class="intro-text fade-in">No vivimos de un case antiguo. Estamos aplicando el método ahora, en otros países, desde el absoluto cero, mostrando lo que está funcionando con presupuesto reducido.</p>
+            <p class="section-label fade-in">// CASOS EN ARGENTINA</p>
+            <h2 class="headline fade-in">El Método ya está funcionando en tu mercado</h2>
+            <p class="intro-text fade-in">No te estamos vendiendo teoría desde Brasil. Anibal está aplicando el método ahora mismo en Argentina — con presupuesto real, desde cero, mostrando cada resultado en tiempo real.</p>
 
-            <div class="cases-grid">
-                <div class="case-card fade-in">
-                    <div class="case-logo-wrap">
-                        <img src="assets/green-is-good-logo.webp" alt="Green is Good" class="case-logo">
-                        <span class="case-flag">🇦🇷 Argentina</span>
+            <div class="ar-cases-grid">
+                <!-- Green is Good -->
+                <div class="ar-case-card fade-in">
+                    <div class="ar-case-header">
+                        <img src="assets/green-is-good-logo.webp" alt="Green is Good" class="ar-case-logo">
+                        <div class="ar-case-tag">🇦🇷 Caso Argentina</div>
                     </div>
-                    <div class="case-stat">
-                        <span class="counter" data-target="200">0</span><span class="case-stat-suffix">K USD</span>
+                    <div class="ar-case-body">
+                        <div class="ar-case-before">
+                            <span class="ar-label">ANTES</span>
+                            <p>Marca sin identidad · $0 en ventas · $1.000 USD de presupuesto inicial</p>
+                        </div>
+                        <div class="ar-case-arrow">↓ &nbsp;5 meses aplicando el método&nbsp; ↓</div>
+                        <div class="ar-case-after">
+                            <span class="ar-label">DESPUÉS</span>
+                            <div class="ar-case-stat">$<span class="counter" data-target="200">0</span>K <span class="ar-stat-usd">USD</span></div>
+                            <p class="ar-case-stat-sub">en facturación · construida desde cero</p>
+                        </div>
                     </div>
-                    <p class="case-subtext">$200K USD en 5 meses desde cero</p>
-                    <ul class="case-details">
-                        <li>Zero facturación y seguidores al inicio</li>
-                        <li>Presupuesto inicial de $1.000 USD</li>
-                        <li>Solo Anibal y Pietro, sin equipo interno</li>
-                    </ul>
-                    <div class="case-proof">
-                        <img src="assets/green-is-good-instagram.jpg" alt="Green is Good Instagram — 34.7K seguidores" class="case-proof-img">
-                        <p class="case-proof-caption">@greenisgood.arg · 34.7K seguidores</p>
+                    <div class="ar-case-social">
+                        <img src="assets/green-is-good-instagram.jpg" alt="@greenisgood.arg" class="ar-case-ig">
+                        <div class="ar-case-ig-info">
+                            <p class="ar-case-ig-handle">@greenisgood.arg</p>
+                            <p class="ar-case-ig-followers">34.7K seguidores</p>
+                            <a href="https://instagram.com/greenisgood.arg" target="_blank" rel="noopener" class="ar-case-ig-link">Ver el proceso en vivo →</a>
+                        </div>
                     </div>
                 </div>
-                <div class="case-card fade-in">
-                    <div class="case-logo-wrap">
-                        <img src="assets/gum-logo2.webp" alt="GÜM" class="case-logo">
-                        <span class="case-flag">🇦🇷 Argentina</span>
+
+                <!-- GÜM -->
+                <div class="ar-case-card fade-in">
+                    <div class="ar-case-header">
+                        <img src="assets/gum-logo2.webp" alt="GÜM" class="ar-case-logo">
+                        <div class="ar-case-tag">🇦🇷 Caso Argentina</div>
                     </div>
-                    <div class="case-stat">
-                        <span class="counter" data-target="100">0</span><span class="case-stat-suffix">K USD</span>
+                    <div class="ar-case-body">
+                        <div class="ar-case-before">
+                            <span class="ar-label">ANTES</span>
+                            <p>Primera creatina en gummies del país · $0 en ventas · sin equipo</p>
+                        </div>
+                        <div class="ar-case-arrow">↓ &nbsp;2 meses aplicando el método&nbsp; ↓</div>
+                        <div class="ar-case-after">
+                            <span class="ar-label">DESPUÉS</span>
+                            <div class="ar-case-stat">$<span class="counter" data-target="100">0</span>K <span class="ar-stat-usd">USD</span></div>
+                            <p class="ar-case-stat-sub">40% de margen · en solo 2 meses</p>
+                        </div>
                     </div>
-                    <p class="case-subtext">en solo 2 meses · 40% de Margen</p>
-                    <ul class="case-details">
-                        <li>Primera Marca de Creatina en Gummies de Argentina</li>
-                        <li>Zero facturación y seguidores al inicio</li>
-                        <li>Foco en influencers</li>
-                    </ul>
-                    <div class="case-proof">
-                        <img src="assets/gum-instagram-real.jpg" alt="GÜM Instagram — 16.1K seguidores" class="case-proof-img">
-                        <p class="case-proof-caption">@gum.argentina · 16.1K seguidores</p>
+                    <div class="ar-case-social">
+                        <img src="assets/gum-instagram-real.jpg" alt="@gum.argentina" class="ar-case-ig">
+                        <div class="ar-case-ig-info">
+                            <p class="ar-case-ig-handle">@gum.argentina</p>
+                            <p class="ar-case-ig-followers">16.1K seguidores</p>
+                            <a href="https://instagram.com/gum.argentina" target="_blank" rel="noopener" class="ar-case-ig-link">Ver el proceso en vivo →</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="major-case fade-in">
-                <div class="sunkids-logo-wrap fade-in">
-                    <img src="assets/sunkids-logo.avif" alt="Sunkids" class="sunkids-logo-img">
-                </div>
-                <h3 class="headline">Nuestro Mayor Case de Éxito:</h3>
-                <div class="sunkids-proof fade-in">
-                    <img src="assets/sunkids-instagram.jpg" alt="Sunkids Instagram — 427K seguidores" class="sunkids-img">
-                    <div class="sunkids-text">
-                        <p class="sunkids-handle">@sunkidsoficial_ · 427K seguidores</p>
-                        <p class="sunkids-desc">De cero al liderazgo: Construimos la marca más grande de anteojos infantiles de Brasil partiendo de cero, consolidando nuestra posición como referencia en el mercado nacional y expandiéndonos a mercados internacionales.</p>
+            <!-- Sunkids strip -->
+            <div class="sunkids-strip fade-in">
+                <p class="sunkids-strip-label">// EL TRACK RECORD DEL CREADOR DEL MÉTODO</p>
+                <div class="sunkids-strip-inner">
+                    <img src="assets/sunkids-logo.avif" alt="Sunkids" class="sunkids-strip-logo">
+                    <div class="sunkids-strip-stats">
+                        <div class="strip-stat">
+                            <span class="strip-num">$14.5M <small>USD</small></span>
+                            <span class="strip-desc">Facturación total</span>
+                        </div>
+                        <div class="strip-stat">
+                            <span class="strip-num">427K</span>
+                            <span class="strip-desc">Seguidores</span>
+                        </div>
+                        <div class="strip-stat">
+                            <span class="strip-num">500K+</span>
+                            <span class="strip-desc">Clientes satisfechos</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="stats-grid">
-                    <div class="stat-item fade-in">
-                        <div class="stat-number"><span class="counter" data-target="500">0</span>K+</div>
-                        <div class="stat-label">Clientes Satisfechos</div>
-                    </div>
-                    <div class="stat-item fade-in">
-                        <div class="stat-number">$<span class="counter" data-target="14">0</span>.5M USD</div>
-                        <div class="stat-label">Facturación Total</div>
-
-                    </div>
-                    <div class="stat-item fade-in">
-                        <div class="stat-number"><span class="counter" data-target="10">0</span>X</div>
-                        <div class="stat-label">Multiplicación de Resultados</div>
-                        <div class="stat-sub">Nuestro método CODE multiplica por 10 los resultados</div>
-                    </div>
-                </div>
+                <p class="sunkids-strip-text">La misma metodología que llevó a Sunkids a ser la marca líder de anteojos infantiles de Brasil — ahora aplicada en Argentina.</p>
             </div>
         </div>
     </section>
