@@ -806,6 +806,16 @@
             margin-bottom: 56px;
         }
 
+        .faq-idioma .faq-question {
+            color: #f59e0b;
+        }
+
+        .checklist-idioma {
+            color: rgba(255,255,255,0.5) !important;
+            font-style: italic;
+            font-size: 15px;
+        }
+
         .testimonial-placeholder {
             color: rgba(255,255,255,0.3) !important;
             font-style: italic;
@@ -1614,7 +1624,13 @@
                 <div class="faq-item">
                     <div class="faq-question">¿Hay clases en vivo?</div>
                     <div class="faq-answer">
-                        <p>Sí. Además de todo el contenido gravado, hay clases en vivo mensuales con Anibal para acompañamiento estratégico y respuesta a preguntas.</p>
+                        <p>Sí. Además de todo el contenido grabado, hay clases en vivo mensuales con Anibal para acompañamiento estratégico y respuesta a preguntas.</p>
+                    </div>
+                </div>
+                <div class="faq-item faq-idioma">
+                    <div class="faq-question">⚠️ ¿El curso está en español?</div>
+                    <div class="faq-answer">
+                        <p>Las clases están actualmente grabadas en <strong>portugués brasileño</strong>, ya que el curso fue desarrollado en Brasil con más de 2.000 alumnos. Estamos en proceso de traducción y muy pronto todo el contenido estará disponible en español. Las clases en vivo mensuales con Anibal se realizan en español.</p>
                     </div>
                 </div>
             </div>
@@ -1629,6 +1645,7 @@
             <h2 class="headline fade-in">Todo esto por <span class="gradient-text">$87 USD</span></h2>
 
             <div class="checklist-grid fade-in">
+                <div class="checklist-item checklist-idioma"><span class="check-mark">⚠️</span> Clases grabadas en portugués · traducción al español en proceso</div>
                 <div class="checklist-item"><span class="check-mark">✓</span> Acceso inmediato a los 12 módulos completos</div>
                 <div class="checklist-item"><span class="check-mark">✓</span> El caso Green is Good documentado en tiempo real</div>
                 <div class="checklist-item"><span class="check-mark">✓</span> Clases en vivo mensuales con Anibal Riveros</div>
@@ -1643,7 +1660,7 @@
                 <p>🔒 Garantía de 7 días — Si en 7 días no ves valor real, te devolvemos el 100% de tu dinero. Sin preguntas. Sin burocracia.</p>
             </div>
 
-            <a href="#oferta" class="cta-btn cta-btn-large fade-in">QUIERO ACCESO AHORA → $87 USD</a>
+            <a href="https://pay.kiwify.com/BXbPqdV" target="_blank" rel="noopener" class="cta-btn cta-btn-large fade-in kiwify-cta">QUIERO ACCESO AHORA → $87 USD</a>
 
             <div class="trust-bar fade-in">🔒 Pago 100% seguro · ✅ Acceso inmediato · 🔄 Garantía de 7 días</div>
 
@@ -1732,6 +1749,21 @@
             } else {
                 navbar.style.background = 'rgba(3, 5, 9, 0.95)';
             }
+        });
+
+        // Meta Pixel — AddToCart ao clicar em qualquer CTA de compra
+        document.querySelectorAll('.kiwify-cta, .cta-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'AddToCart', {
+                        content_name: 'Método Marca',
+                        content_ids: ['metodo-marca'],
+                        content_type: 'product',
+                        value: 87,
+                        currency: 'USD'
+                    });
+                }
+            });
         });
     </script>
 </body>
