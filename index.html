@@ -336,17 +336,21 @@
 
         .hero-image {
             width: 100%;
-            max-width: 500px;
+            max-width: 480px;
             height: 580px;
-            background: #0d1117;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
-            color: rgba(255, 255, 255, 0.3);
-            font-size: 16px;
             justify-self: end;
+            position: relative;
+        }
+
+        .hero-image img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            object-position: bottom center;
+            filter: drop-shadow(0 0 40px rgba(41,144,240,0.15));
         }
 
         /* ========== SECTION: PROBLEMA ========== */
@@ -1261,7 +1265,7 @@
                     <p class="proof-text"><strong>+2.000 emprendedores</strong> en Brasil ya lo aplicaron · Ahora llegó a Argentina</p>
                 </div>
             </div>
-            <div class="hero-image fade-in">FOTO ANIBAL AQUÍ</div>
+            <div class="hero-image fade-in"><img src="assets/anibal.png" alt="Anibal Riveros"></div>
         </div>
     </section>
 
@@ -1409,7 +1413,7 @@
     <section class="section-anibal">
         <div class="container">
             <div class="anibal-grid">
-                <div class="anibal-image fade-in">FOTO ANIBAL AQUÍ</div>
+                <div class="anibal-image fade-in"><img src="assets/anibal.png" alt="Anibal Riveros" style="width:100%;height:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 0 30px rgba(41,144,240,0.12));"></div>
                 <div class="fade-in">
                     <p class="section-label">// QUIÉN ES ANIBAL</p>
                     <h2 class="headline">Aprendé de quien lo construyó de verdad</h2>
@@ -1435,9 +1439,9 @@
             <div class="testimonials-grid testimonials-grid-3">
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-header">
-                        <img src="assets/bernardo-simou.jpg" alt="Bernardo Simou" class="testimonial-photo">
+                        <img src="assets/bernardo-simou.jpg" alt="Bernardo" class="testimonial-photo">
                         <div>
-                            <div class="testimonial-name">Bernardo Simou</div>
+                            <div class="testimonial-name">Bernardo</div>
                             <div class="testimonial-role">PeachUp · Brasil 🇧🇷</div>
                         </div>
                     </div>
