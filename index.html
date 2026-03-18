@@ -806,6 +806,93 @@
             margin-bottom: 56px;
         }
 
+        /* Idioma block */
+        .idioma-block {
+            background: rgba(41, 144, 240, 0.07);
+            border: 1px solid rgba(41, 144, 240, 0.25);
+            border-left: 3px solid #2990F0;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .idioma-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2990F0;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .idioma-text {
+            font-size: 15px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+
+        .idioma-text strong {
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Price anchor */
+        .price-anchor {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 580px;
+            margin: 0 auto 32px;
+        }
+
+        .anchor-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.06);
+            gap: 16px;
+        }
+
+        .anchor-highlight {
+            background: rgba(41,144,240,0.08);
+            border-color: rgba(41,144,240,0.3);
+        }
+
+        .anchor-label {
+            font-size: 15px;
+            color: rgba(255,255,255,0.65);
+        }
+
+        .anchor-highlight .anchor-label {
+            color: rgba(255,255,255,0.9);
+            font-weight: 600;
+        }
+
+        .anchor-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            white-space: nowrap;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            color: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 600px) {
+            .anchor-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 6px;
+            }
+        }
+
         .testimonial-placeholder {
             color: rgba(255,255,255,0.3) !important;
             font-style: italic;
@@ -1361,9 +1448,9 @@
                 <ul class="hero-bullets">
                     <li>Curso completo + mentorías + acompañamiento estratégico</li>
                     <li>Acceso inmediato con 7 días de garantía</li>
-                    <li>Precio especial de lanzamiento — solo por tiempo limitado</li>
+                    <li>Precio de lanzamiento válido hasta abril — después sube</li>
                 </ul>
-                <a href="#oferta" class="cta-btn">QUIERO SER DE LOS PRIMEROS EN ARGENTINA</a>
+                <a href="#oferta" class="cta-btn">QUIERO SER DE LOS PRIMEROS → $87 USD</a>
                 <div class="hero-social-proof">
                     <div class="proof-avatars">
                         <div class="proof-avatar" style="background:#1a4a8a;">A</div>
@@ -1385,9 +1472,9 @@
             <p class="section-label fade-in">// POSICIONAMIENTO</p>
             <h2 class="headline fade-in">Si ya intentaste vender online y te diste cuenta de que:</h2>
             <ul class="pain-list fade-in">
-                <li>Tenés producto, pero no conseguís generar ventas consistentes</li>
-                <li>Ya invertiste en publicidad, influencers o agencias y no tuviste retorno</li>
-                <li>No sabés exactamente qué diferencia tu marca de las otras</li>
+                <li>Tenés producto, pero no lográs generar ventas consistentes</li>
+                <li>Ya invertiste en publicidad, influencers o agencias y no tuviste resultados</li>
+                <li>No sabés exactamente qué diferencia a tu marca de las demás</li>
                 <li>O querés crear una marca desde cero, pero no sabés por dónde empezar</li>
             </ul>
             <p class="bridge-text fade-in">El problema no es falta de esfuerzo. Es falta de método validado y aplicado en la práctica.</p>
@@ -1499,7 +1586,7 @@
                 <li><span class="module-number">03.</span><span><span class="module-title">CODE: Conectar</span> <span class="module-desc">— Esencia, arquetipos, storytelling con el Círculo Dorado</span></span></li>
                 <li><span class="module-number">04.</span><span><span class="module-title">CODE: Ofertar</span> <span class="module-desc">— Value stacking, psicología de precios, oferta irresistible</span></span></li>
                 <li><span class="module-number">05.</span><span><span class="module-title">CODE: Diferenciar</span> <span class="module-desc">— Prueba social, influencers, comunidad, experiencia</span></span></li>
-                <li><span class="module-number">06.</span><span><span class="module-title">Producción de Contenido</span> <span class="module-desc">— UGC, criativos, landing pages, copywriting, email</span></span></li>
+                <li><span class="module-number">06.</span><span><span class="module-title">Producción de Contenido</span> <span class="module-desc">— UGC, creativos, landing pages, copywriting, email</span></span></li>
                 <li><span class="module-number">07.</span><span><span class="module-title">Recuperación de ventas con IA</span> <span class="module-desc">— 30-45% de carritos recuperados con WhatsApp</span></span></li>
                 <li><span class="module-number">08.</span><span><span class="module-title">CODE: Escalar</span> <span class="module-desc">— Meta Ads, Google Ads, analytics, Black Friday</span></span></li>
                 <li><span class="module-number">09.</span><span><span class="module-title">Clases en vivo mensuales</span> <span class="module-desc">— Acompañamiento estratégico en tiempo real</span></span></li>
@@ -1555,7 +1642,7 @@
                             <div class="testimonial-role">PeachUp · Brasil 🇧🇷</div>
                         </div>
                     </div>
-                    <p class="testimonial-text">"Nuestra empresa no vendía ni R$1.000 por mes. En exactamente 90 días, aplicando el plan que armamos con Anibal y Pietro, llevamos la empresa al millón. Si estás dudando, entrá con los ojos cerrados. Fue la mejor decisión de mi vida."</p>
+                    <p class="testimonial-text">"Nuestra empresa no llegaba a los $200 USD por mes. En exactamente 90 días, aplicando el plan que armamos con Anibal y Pietro, llegamos al millón en facturación. Si estás dudando, entrá con los ojos cerrados. Fue la mejor decisión de mi vida."</p>
                 </div>
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-header">
@@ -1565,7 +1652,7 @@
                             <div class="testimonial-role">Altos Calçados · Brasil 🇧🇷</div>
                         </div>
                     </div>
-                    <p class="testimonial-text">"Hacíamos R$80-100K por mes pero de forma totalmente desorganizada. Después de aplicar el método, escalamos 10 a 20 veces más. Pasamos de ser una tiendita a ser una empresa y una marca real con visión de largo plazo."</p>
+                    <p class="testimonial-text">"Facturábamos unos $15-20K USD por mes pero de forma totalmente desorganizada. Después de aplicar el método, escalamos 10 a 20 veces más. Pasamos de ser una tiendita a ser una empresa y una marca real con visión de largo plazo."</p>
                 </div>
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-header">
@@ -1575,7 +1662,7 @@
                             <div class="testimonial-role">E-commerce · Brasil 🇧🇷</div>
                         </div>
                     </div>
-                    <p class="testimonial-text">"Era dropshipper, los procesos no acompañaban el crecimiento. Conocí a Anibal, tomé una marca desde cero y la llevamos a millones en ventas en el mismo año. Si tenés desorden en tu operación, este método es exactamente lo que necesitás."</p>
+                    <p class="testimonial-text">"Era dropshipper, los procesos no seguían el ritmo del crecimiento. Conocí a Anibal, tomé una marca desde cero y la llevamos a millones de dólares en ventas en el mismo año. Si tenés desorden en tu operación, este método es exactamente lo que necesitás."</p>
                 </div>
             </div>
         </div>
@@ -1631,7 +1718,18 @@
     <section class="section-oferta" id="oferta">
         <div class="container">
             <p class="section-label fade-in">// PRECIO DE LANZAMIENTO ARGENTINA 🇦🇷</p>
-            <p class="launch-context fade-in">En Brasil el curso ya está consolidado con más de 2.000 alumnos. Este es el precio de entrada para los primeros en Argentina — después sube.</p>
+
+            <div class="idioma-block fade-in">
+                <p class="idioma-title">🇧🇷 → 🇦🇷 &nbsp;Sobre el idioma del contenido</p>
+                <p class="idioma-text">Las clases grabadas están en portugués brasileño — el mismo idioma en que Anibal construyó Sunkids hasta $14.5M USD. La versión 100% en español está en producción activa. <strong>Los alumnos que entran ahora reciben ambas versiones sin costo adicional.</strong> Cuando el curso en español esté listo, el precio sube.</p>
+            </div>
+
+            <div class="price-anchor fade-in">
+                <div class="anchor-item"><span class="anchor-label">Una consultoría de estrategia de marca</span><span class="anchor-price strikethrough">$500–2.000 USD / mes</span></div>
+                <div class="anchor-item anchor-highlight"><span class="anchor-label">✦ Método Marca completo — acceso de por vida</span><span class="anchor-price gradient-text">$87 USD</span></div>
+            </div>
+
+            <p class="launch-context fade-in">⏳ Precio de lanzamiento válido hasta el <strong>30 de abril</strong>. Después sube — sin excepciones.</p>
             <h2 class="headline fade-in">Todo esto por <span class="gradient-text">$87 USD</span></h2>
 
             <div class="checklist-grid fade-in">
@@ -1654,7 +1752,7 @@
 
             <div class="trust-bar fade-in">🔒 Pago 100% seguro · ✅ Acceso inmediato · 🔄 Garantía de 7 días</div>
 
-            <p class="price-note fade-in">Este es el precio de lanzamiento. Puede aumentar sin previo aviso.</p>
+            <p class="price-note fade-in">Precio válido hasta el 30 de abril · Después sube a $147 USD.</p>
         </div>
     </section>
 
