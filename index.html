@@ -52,16 +52,42 @@
         .navbar .container {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             height: 72px;
         }
 
         .nav-logo {
-            font-size: 18px;
-            font-weight: 600;
-            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
             text-decoration: none;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo-method {
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+
+        .nav-logo-marca {
+            background: linear-gradient(135deg, #2990F0 0%, #70c2ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+
+        .nav-logo-sep {
+            width: 1px;
+            height: 18px;
+            background: rgba(255,255,255,0.2);
         }
 
         .nav-links {
@@ -1078,17 +1104,11 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="nav-logo">MÉTODO MARCA</a>
-            <button class="nav-hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#lo-que-es">Lo que es</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#contenidos">Contenidos</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#oferta" class="nav-cta">QUIERO ENTRAR</a></li>
-            </ul>
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-method">MÉTODO</span>
+                <span class="nav-logo-sep"></span>
+                <span class="nav-logo-marca">MARCA</span>
+            </a>
         </div>
     </nav>
 
