@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Marca · De Cero a Una Marca Millonaria</title>
+    <meta name="description" content="El paso a paso real para elegir el producto correcto, construir una marca magnética y estructurar la base que sostiene $200.000 dólares en ventas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #030509;
+            color: rgb(209, 209, 209);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ========== NAVBAR ========== */
+        /* ANNOUNCEMENT BAR */
+        .announcement-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            background: linear-gradient(90deg, #003880 0%, #1a6fd8 50%, #003880 100%);
+            background-size: 200% auto;
+            animation: shimmer 4s linear infinite;
+            text-align: center;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .announcement-bar span {
+            opacity: 0.75;
+            font-weight: 400;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 38px;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(3, 5, 9, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: background 0.3s ease;
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 72px;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo-method {
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+
+        .nav-logo-marca {
+            background: linear-gradient(135deg, #2990F0 0%, #70c2ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+
+        .nav-logo-sep {
+            width: 1px;
+            height: 18px;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        .nav-cta {
+            background: #1a6fd8;
+            color: #fff !important;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: #2180eb;
+        }
+
+        .nav-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .nav-hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        /* ========== SECTION LABEL ========== */
+        .hero-social-proof {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 24px;
+            padding: 16px 20px;
+            background: rgba(41, 144, 240, 0.08);
+            border: 1px solid rgba(41, 144, 240, 0.2);
+            border-radius: 10px;
+            max-width: 480px;
+        }
+
+        .proof-avatars {
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        .proof-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #030509;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            margin-left: -8px;
+        }
+
+        .proof-avatar:first-child { margin-left: 0; }
+
+        .proof-text {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+        }
+
+        .proof-text strong {
+            color: #fff;
+        }
+
+        .launch-context {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+            max-width: 600px;
+            margin: 0 auto 16px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .section-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        /* ========== GRADIENT TEXT ========== */
+        .gradient-text {
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ========== CTA BUTTON ========== */
+        .cta-btn {
+            display: inline-block;
+            background: #1a6fd8;
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .cta-btn:hover {
+            background: #2180eb;
+            transform: translateY(-2px);
+        }
+
+        .cta-btn-large {
+            font-size: 20px;
+            padding: 20px 48px;
+        }
+
+        /* ========== FADE IN ANIMATION ========== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== SECTION: HERO ========== */
+        .hero {
+            padding-top: 198px;
+            padding-bottom: 120px;
+            background: #030509;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-headline {
+            font-size: 54px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 0;
+        }
+
+        .hero-sub {
+            font-size: 26px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.75);
+            margin-top: 24px;
+            line-height: 1.6;
+        }
+
+        .hero-bullets {
+            margin-top: 28px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .hero-bullets li {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .hero-bullets li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: #2990F0;
+        }
+
+        .hero .cta-btn {
+            margin-top: 40px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 480px;
+            height: 580px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            justify-self: end;
+            position: relative;
+        }
+
+        .hero-image img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            object-position: bottom center;
+            filter: drop-shadow(0 0 40px rgba(41,144,240,0.15));
+        }
+
+        /* ========== SECTION: CODE ========== */
+        .section-code {
+            padding: 120px 0;
+            background: #030509;
+        }
+
+        .code-intro {
+            font-size: 18px;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 64px;
+            line-height: 1.7;
+        }
+
+        .code-intro strong {
+            color: #2990F0;
+            font-weight: 700;
+        }
+
+        .code-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 48px;
+        }
+
+        .code-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: border-color 0.3s, background 0.3s;
+        }
+
+        .code-card:hover {
+            border-color: rgba(41,144,240,0.3);
+            background: rgba(41,144,240,0.04);
+        }
+
+        .code-letter {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .code-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 10px;
+        }
+
+        .code-desc {
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.65;
+        }
+
+        .code-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 24px 32px;
+            background: rgba(41,144,240,0.05);
+            border: 1px solid rgba(41,144,240,0.15);
+            border-radius: 12px;
+        }
+
+        .code-flow-item {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.55);
+            letter-spacing: 1px;
+        }
+
+        .code-flow-letter {
+            font-weight: 900;
+            font-size: 18px;
+            background: linear-gradient(135deg, #2990F0 0%, #70c2ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .code-flow-arrow {
+            color: rgba(41,144,240,0.4);
+            font-size: 18px;
+        }
+
+        @media (max-width: 968px) {
+            .code-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 560px) {
+            .code-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .code-flow {
+                gap: 10px;
+                font-size: 14px;
+            }
+        }
+
+        /* ========== SECTION: AR CASES ========== */
+        .ar-cases-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-bottom: 48px;
+        }
+
+        .ar-case-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.3s;
+        }
+
+        .ar-case-card:hover {
+            border-color: rgba(41,144,240,0.35);
+        }
+
+        .ar-case-header-centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            padding: 24px 24px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .ar-case-logo-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 10px;
+        }
+
+        .ar-logo-white {
+            background: #ffffff;
+        }
+
+        .ar-logo-dark {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .ar-case-logo {
+            height: 44px;
+            width: auto;
+            max-width: 160px;
+            object-fit: contain;
+        }
+
+        .ar-case-tag {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #2990F0;
+            background: rgba(41,144,240,0.1);
+            border: 1px solid rgba(41,144,240,0.2);
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .ar-case-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .ar-case-before, .ar-case-after {
+            padding: 14px 16px;
+            border-radius: 10px;
+        }
+
+        .ar-case-before {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .ar-case-after {
+            background: rgba(41,144,240,0.07);
+            border: 1px solid rgba(41,144,240,0.2);
+        }
+
+        .ar-label {
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: 6px;
+        }
+
+        .ar-case-before p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .ar-case-arrow {
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255,255,255,0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .ar-case-stat {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+
+        .ar-stat-usd {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .ar-case-stat-sub {
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+        }
+
+        .ar-case-social {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 24px 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: auto;
+        }
+
+        .ar-ig-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+
+        .ar-case-ig-handle {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .ar-case-ig-followers {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+            margin-top: 2px;
+        }
+
+        /* Sunkids strip */
+        .sunkids-strip {
+            background: rgba(255,255,255,0.025);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px;
+            padding: 32px 36px;
+            text-align: center;
+        }
+
+        .sunkids-strip-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.3);
+            margin-bottom: 24px;
+        }
+
+        .sunkids-strip-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .sunkids-strip-logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.85;
+        }
+
+        .sunkids-strip-stats {
+            display: flex;
+            gap: 32px;
+        }
+
+        .strip-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .strip-num {
+            font-size: 26px;
+            font-weight: 800;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .strip-num small {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .strip-desc {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 0.5px;
+        }
+
+        .sunkids-strip-text {
+            font-size: 15px;
+            color: rgba(255,255,255,0.45);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .ar-cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sunkids-strip-inner {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .sunkids-strip-stats {
+                gap: 20px;
+            }
+
+            .ar-case-stat {
+                font-size: 40px;
+            }
+        }
+
+        /* ========== SECTION: PROBLEMA ========== */
+        .section-problema {
+            background: #05080f;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-problema .headline {
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 48px;
+        }
+
+        .pain-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .pain-list li {
+            font-size: 22px;
+            font-weight: 400;
+            color: rgb(203, 203, 203);
+            padding-left: 32px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .pain-list li::before {
+            content: '✕';
+            position: absolute;
+            left: 0;
+            color: #c0392b;
+            font-weight: 600;
+        }
+
+        .bridge-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(209, 209, 209);
+            margin-top: 60px;
+            line-height: 1.5;
+        }
+
+        .bridge-sub {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 16px;
+        }
+
+        .section-problema .cta-btn {
+            margin-top: 48px;
+        }
+
+        /* ========== SECTION: APRESENTAÇÃO ========== */
+        .section-apresentacao {
+            background: #030509;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+        }
+
+        .section-apresentacao .headline {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 40px;
+        }
+
+        .section-apresentacao .body-text {
+            font-size: 22px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-apresentacao .highlight-text {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(209, 209, 209);
+            margin-top: 32px;
+        }
+
+        .section-apresentacao .cta-btn {
+            margin-top: 48px;
+        }
+
+        /* ========== SECTION: CASES ========== */
+        .section-cases {
+            background: #05080f;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-cases .headline {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 20px;
+        }
+
+        .section-cases .intro-text {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 700px;
+            line-height: 1.7;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 64px;
+        }
+
+        .case-card {
+            padding: 0;
+        }
+
+        .case-logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .case-logo {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        .case-flag {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 500;
+        }
+
+        .case-proof {
+            margin-top: 28px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 20px;
+        }
+
+        .case-proof-img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .case-proof-caption {
+            font-size: 13px;
+            color: rgba(255,255,255,0.35);
+            margin-top: 8px;
+        }
+
+        .sunkids-logo-wrap {
+            margin-bottom: 24px;
+        }
+
+        .sunkids-logo-img {
+            height: 52px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        .sunkids-proof {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            margin: 32px 0 48px;
+            padding: 32px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+        }
+
+        .sunkids-img {
+            width: 240px;
+            flex-shrink: 0;
+            border-radius: 12px;
+        }
+
+        .sunkids-handle {
+            font-size: 14px;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 12px;
+        }
+
+        .sunkids-desc {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.7;
+        }
+
+        .case-stat {
+            font-size: 72px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .case-stat-suffix {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .case-subtext {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-top: 8px;
+            font-weight: 400;
+        }
+
+        .case-details {
+            list-style: none;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .case-details li {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .case-details li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+        }
+
+        .major-case {
+            margin-top: 80px;
+            padding-top: 80px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .major-case .headline {
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .major-case .body-text {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            max-width: 800px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            margin-top: 64px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(209, 209, 209);
+            margin-top: 8px;
+        }
+
+        .stat-sub {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 4px;
+        }
+
+        /* ========== SECTION: CONTEÚDOS ========== */
+        .section-contenidos {
+            background: #030509;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-contenidos .headline {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 48px;
+            max-width: 800px;
+        }
+
+        .modules-list {
+            list-style: none;
+        }
+
+        .modules-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(203, 203, 203);
+            display: flex;
+            gap: 16px;
+        }
+
+        .modules-list li:first-child {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .module-number {
+            color: rgba(255, 255, 255, 0.35);
+            font-weight: 600;
+            min-width: 32px;
+        }
+
+        .module-title {
+            font-weight: 600;
+            color: rgb(209, 209, 209);
+        }
+
+        .module-desc {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .section-contenidos .cta-btn {
+            margin-top: 56px;
+        }
+
+        /* ========== MARQUEE TICKER ========== */
+        .marquee {
+            background: #05080f;
+            padding: 24px 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marquee-scroll 20s linear infinite;
+        }
+
+        .marquee-text {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: rgba(255, 255, 255, 0.15);
+            white-space: nowrap;
+            text-transform: uppercase;
+            padding-right: 48px;
+        }
+
+        @keyframes marquee-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        /* ========== SECTION: ANIBAL ========== */
+        .section-anibal {
+            background: #030509;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .anibal-grid {
+            display: grid;
+            grid-template-columns: 440px 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .anibal-image {
+            width: 440px;
+            height: 520px;
+            background: #0d1117;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 16px;
+        }
+
+        .section-anibal .headline {
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 24px;
+        }
+
+        .section-anibal .body-text {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+
+        .credentials-list {
+            list-style: none;
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .credentials-list li {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        /* ========== SECTION: DEPOIMENTOS ========== */
+        .section-depoimentos {
+            background: #05080f;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-depoimentos .headline {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 56px;
+        }
+
+        /* Idioma block */
+        .idioma-block {
+            background: rgba(41, 144, 240, 0.07);
+            border: 1px solid rgba(41, 144, 240, 0.25);
+            border-left: 3px solid #2990F0;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .idioma-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2990F0;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .idioma-text {
+            font-size: 15px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+
+        .idioma-text strong {
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Price anchor */
+        .price-anchor {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 580px;
+            margin: 0 auto 32px;
+        }
+
+        .anchor-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.06);
+            gap: 16px;
+        }
+
+        .anchor-highlight {
+            background: rgba(41,144,240,0.08);
+            border-color: rgba(41,144,240,0.3);
+        }
+
+        .anchor-label {
+            font-size: 15px;
+            color: rgba(255,255,255,0.65);
+        }
+
+        .anchor-highlight .anchor-label {
+            color: rgba(255,255,255,0.9);
+            font-weight: 600;
+        }
+
+        .anchor-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            white-space: nowrap;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            color: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 600px) {
+            .anchor-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 6px;
+            }
+        }
+
+        /* ========== STICKY CTA BAR ========== */
+        .sticky-cta-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(3, 5, 9, 0.97);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 12px 24px;
+            transform: translateY(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .sticky-cta-bar.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-cta-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .sticky-cta-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .sticky-cta-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 0.5px;
+        }
+
+        .sticky-cta-price {
+            font-size: 18px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #003880 0%, #2990F0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sticky-cta-note {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.4);
+            -webkit-text-fill-color: rgba(255,255,255,0.4);
+        }
+
+        .sticky-cta-btn {
+            background: linear-gradient(135deg, #1a6fd8 0%, #2990F0 100%);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            transition: opacity 0.2s, transform 0.2s;
+            flex-shrink: 0;
+        }
+
+        .sticky-cta-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 480px) {
+            .sticky-cta-bar {
+                padding: 10px 16px;
+            }
+
+            .sticky-cta-name {
+                font-size: 13px;
+            }
+
+            .sticky-cta-price {
+                font-size: 16px;
+            }
+
+            .sticky-cta-btn {
+                padding: 10px 18px;
+                font-size: 13px;
+            }
+        }
+
+        .testimonial-placeholder {
+            color: rgba(255,255,255,0.3) !important;
+            font-style: italic;
+        }
+
+        .testimonials-sub {
+            font-size: 18px;
+            color: rgba(255,255,255,0.55);
+            text-align: center;
+            margin-bottom: 48px;
+            margin-top: -16px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 32px;
+            border-radius: 8px;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-photo {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            flex-shrink: 0;
+            border: 2px solid rgba(41,144,240,0.3);
+        }
+
+        .testimonials-grid-3 {
+            grid-template-columns: repeat(3, 1fr) !important;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #1a2030;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2990F0;
+            flex-shrink: 0;
+        }
+
+        .testimonial-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(209, 209, 209);
+        }
+
+        .testimonial-role {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+        }
+
+        /* ========== SECTION: FAQ ========== */
+        .section-faq {
+            background: #030509;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-faq .headline {
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .faq-item:first-child {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .faq-question {
+            padding: 24px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(209, 209, 209);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 24px;
+        }
+
+        .faq-answer p {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+        }
+
+        /* ========== SECTION: OFERTA ========== */
+        .section-oferta {
+            background: #05080f;
+            padding: 120px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+        }
+
+        .section-oferta .headline {
+            font-size: 52px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: rgb(209, 209, 209);
+            margin-bottom: 48px;
+        }
+
+        .section-oferta .headline .gradient-text {
+            font-weight: 400;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 48px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .checklist-item {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 8px 0;
+        }
+
+        .check-mark {
+            color: #2990F0;
+            margin-right: 8px;
+        }
+
+        .guarantee-block {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 32px;
+            border-radius: 8px;
+            border-left: 3px solid #1a6fd8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .guarantee-block p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .section-oferta .cta-btn {
+            margin-top: 48px;
+        }
+
+        .trust-bar {
+            margin-top: 24px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .price-note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: #030509;
+            padding: 48px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 968px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-headline {
+                font-size: 40px;
+            }
+
+            .hero-sub {
+                font-size: 20px;
+            }
+
+            .hero-image {
+                max-width: 340px;
+                height: 360px;
+                justify-self: center;
+                margin: 0 auto;
+            }
+
+            .hero-image img {
+                height: 100%;
+                width: auto;
+            }
+
+            .hero-social-proof {
+                max-width: 100%;
+                margin: 24px auto 0;
+                justify-content: center;
+            }
+
+            .hero-bullets {
+                align-items: center;
+            }
+
+            .section-problema .headline,
+            .section-apresentacao .headline,
+            .section-cases .headline,
+            .section-contenidos .headline,
+            .section-depoimentos .headline,
+            .section-faq .headline,
+            .section-oferta .headline {
+                font-size: 36px;
+            }
+
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .anibal-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .anibal-image {
+                width: 100%;
+                max-width: 440px;
+                height: 400px;
+                margin: 0 auto;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .checklist-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .major-case .headline {
+                font-size: 32px;
+            }
+
+            .section-anibal .headline {
+                font-size: 36px;
+            }
+
+            .case-stat {
+                font-size: 56px;
+            }
+
+            .stat-number {
+                font-size: 44px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sunkids-proof {
+                flex-direction: column;
+            }
+            .sunkids-img {
+                width: 100%;
+                max-width: 320px;
+            }
+            .case-proof-img {
+                max-width: 100%;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: rgba(3, 5, 9, 0.98);
+                padding: 24px;
+                gap: 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-hamburger {
+                display: flex;
+            }
+
+            .announcement-bar {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+
+            .announcement-bar span {
+                display: none;
+            }
+
+            .navbar {
+                top: 34px;
+            }
+
+            .hero {
+                padding-top: 160px;
+                padding-bottom: 80px;
+            }
+
+            .hero-social-proof {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                padding: 16px;
+            }
+
+            .proof-text {
+                font-size: 13px;
+            }
+
+            .testimonials-grid-3 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .hero-headline {
+                font-size: 32px;
+            }
+
+            .hero-sub {
+                font-size: 18px;
+            }
+
+            .section-problema,
+            .section-apresentacao,
+            .section-cases,
+            .section-contenidos,
+            .section-anibal,
+            .section-depoimentos,
+            .section-faq,
+            .section-oferta {
+                padding: 48px 0;
+            }
+
+            .section-problema .headline,
+            .section-apresentacao .headline,
+            .section-cases .headline,
+            .section-contenidos .headline,
+            .section-depoimentos .headline,
+            .section-faq .headline,
+            .section-oferta .headline {
+                font-size: 28px;
+            }
+
+            .pain-list li {
+                font-size: 18px;
+            }
+
+            .bridge-text {
+                font-size: 20px;
+            }
+
+            .cta-btn {
+                padding: 14px 32px;
+                font-size: 15px;
+            }
+
+            .cta-btn-large {
+                font-size: 17px;
+                padding: 18px 36px;
+            }
+
+            .credentials-list li {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .announcement-bar span {
+                display: none;
+            }
+
+            .hero-headline {
+                font-size: 26px;
+            }
+
+            .hero-image {
+                max-width: 260px;
+                height: 280px;
+            }
+
+            .section-label {
+                font-size: 10px;
+                letter-spacing: 1.5px;
+            }
+
+            .case-stat {
+                font-size: 44px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .checklist-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-btn {
+                font-size: 14px;
+                padding: 14px 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .sunkids-proof {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .sunkids-img {
+                width: 100%;
+                max-width: 240px;
+            }
+
+            .case-proof-img {
+                max-width: 100%;
+            }
+
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-social-proof {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .launch-context {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1584489149506496');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1584489149506496&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        🇦🇷 Primer lanzamiento en Argentina &nbsp;·&nbsp; <span>+2.000 emprendedores en Brasil ya transformaron sus marcas</span>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-method">MÉTODO</span>
+                <span class="nav-logo-sep"></span>
+                <span class="nav-logo-marca">MARCA</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <p class="section-label">🇦🇷 PRIMER LANZAMIENTO EN ARGENTINA · POR PRIMERA VEZ EN ESPAÑOL</p>
+                <h1 class="hero-headline">EL MÉTODO DETRÁS DE <span class="gradient-text">3 MARCAS QUE ESCALARON EN SERIO</span></h1>
+                <p class="hero-sub">El método que ya transformó más de 2.000 emprendedores en Brasil · ahora disponible por primera vez en español, aplicado en Argentina con casos reales.</p>
+                <ul class="hero-bullets">
+                    <li>Curso completo + mentorías + acompañamiento estratégico</li>
+                    <li>Acceso inmediato con 7 días de garantía</li>
+                    <li>Precio de lanzamiento válido hasta abril · después sube</li>
+                </ul>
+                <a href="#oferta" class="cta-btn">QUIERO SER DE LOS PRIMEROS</a>
+                <div class="hero-social-proof">
+                    <div class="proof-avatars">
+                        <div class="proof-avatar" style="background:#1a4a8a;">A</div>
+                        <div class="proof-avatar" style="background:#1a6fd8;">M</div>
+                        <div class="proof-avatar" style="background:#0d3a6e;">L</div>
+                        <div class="proof-avatar" style="background:#2990F0;">R</div>
+                        <div class="proof-avatar" style="background:#1a5ca0;">C</div>
+                    </div>
+                    <p class="proof-text"><strong>+2.000 emprendedores</strong> en Brasil ya lo aplicaron · Ahora llegó a Argentina</p>
+                </div>
+            </div>
+            <div class="hero-image fade-in"><img src="assets/anibal.png" alt="Anibal Riveros"></div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="section-problema" id="lo-que-es">
+        <div class="container">
+            <p class="section-label fade-in">// POSICIONAMIENTO</p>
+            <h2 class="headline fade-in">Si ya intentaste vender online y te diste cuenta de que:</h2>
+            <ul class="pain-list fade-in">
+                <li>Tenés producto, pero no lográs generar ventas consistentes</li>
+                <li>Ya invertiste en publicidad, influencers o agencias y no tuviste resultados</li>
+                <li>No sabés exactamente qué diferencia a tu marca de las demás</li>
+                <li>O querés crear una marca desde cero, pero no sabés por dónde empezar</li>
+            </ul>
+            <p class="bridge-text fade-in">El problema no es falta de esfuerzo. Es falta de método validado y aplicado en la práctica.</p>
+            <p class="bridge-sub fade-in">La mayoría de los cursos enseñan teoría. El Método Marca enseña ejecución real.</p>
+            <a href="#oferta" class="cta-btn fade-in">QUIERO ENTRAR AL MÉTODO MARCA AHORA</a>
+        </div>
+    </section>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="section-apresentacao" id="presentacion">
+        <div class="container">
+            <p class="section-label fade-in">// PRESENTACIÓN</p>
+            <h2 class="headline fade-in">El Método Marca es un entrenamiento completo</h2>
+            <p class="body-text fade-in">Que muestra, paso a paso, cómo crear, estructurar, posicionar y escalar una marca online. Todo esto fue hecho en la práctica, con una marca creada desde cero, con cada decisión, error y acierto documentados dentro del curso.</p>
+            <p class="highlight-text fade-in">No aprendés lo que "funciona en teoría". Aprendés lo que ya funcionó de verdad.</p>
+            <a href="#oferta" class="cta-btn fade-in">QUIERO APLICAR EL MÉTODO MARCA</a>
+        </div>
+    </section>
+
+    <!-- CODE METHOD -->
+    <section class="section-code" id="metodo">
+        <div class="container">
+            <p class="section-label fade-in">// EL MÉTODO</p>
+            <h2 class="headline fade-in">El sistema detrás de cada resultado</h2>
+            <p class="code-intro fade-in">Método Marca no es una colección de videos. Es un sistema de 4 pilares diseñado para construir marcas que escalan. Lo llamamos <strong>CODE</strong>.</p>
+
+            <div class="code-grid">
+                <div class="code-card fade-in">
+                    <div class="code-letter">C</div>
+                    <div class="code-content">
+                        <h3 class="code-title">CONECTAR</h3>
+                        <p class="code-desc">Definís la esencia de tu marca: identidad, arquetipo, storytelling y el porqué que hace que la gente elija vos sobre cualquier competidor.</p>
+                    </div>
+                </div>
+                <div class="code-card fade-in">
+                    <div class="code-letter">O</div>
+                    <div class="code-content">
+                        <h3 class="code-title">OFERTAR</h3>
+                        <p class="code-desc">Construís una oferta irresistible. Aprendés psicología de precios, value stacking y cómo hacer que el precio sea lo último en lo que el cliente piensa.</p>
+                    </div>
+                </div>
+                <div class="code-card fade-in">
+                    <div class="code-letter">D</div>
+                    <div class="code-content">
+                        <h3 class="code-title">DIFERENCIAR</h3>
+                        <p class="code-desc">Posicionás tu marca para que deje de competir por precio. Prueba social, comunidad, influencers y experiencia del cliente como ventaja competitiva.</p>
+                    </div>
+                </div>
+                <div class="code-card fade-in">
+                    <div class="code-letter">E</div>
+                    <div class="code-content">
+                        <h3 class="code-title">ESCALAR</h3>
+                        <p class="code-desc">Con la base sólida, escalás con tráfego pago. Meta Ads, Google Ads, analytics y la estructura que sostiene el crecimiento sin romper la operación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-flow fade-in">
+                <span class="code-flow-item"><span class="code-flow-letter">C</span>onectar</span>
+                <span class="code-flow-arrow">→</span>
+                <span class="code-flow-item"><span class="code-flow-letter">O</span>fertar</span>
+                <span class="code-flow-arrow">→</span>
+                <span class="code-flow-item"><span class="code-flow-letter">D</span>iferenciar</span>
+                <span class="code-flow-arrow">→</span>
+                <span class="code-flow-item"><span class="code-flow-letter">E</span>scalar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASES -->
+    <section class="section-cases" id="resultados">
+        <div class="container">
+            <p class="section-label fade-in">// CASOS EN ARGENTINA</p>
+            <h2 class="headline fade-in">El Método ya está funcionando en tu mercado</h2>
+            <p class="intro-text fade-in">No te estamos vendiendo teoría desde Brasil. Anibal está aplicando el método ahora mismo en Argentina · con presupuesto real, desde cero, mostrando cada resultado en tiempo real.</p>
+
+            <div class="ar-cases-grid">
+                <!-- Green is Good -->
+                <div class="ar-case-card fade-in">
+                    <div class="ar-case-header-centered">
+                        <div class="ar-case-tag">🇦🇷 Caso Argentina</div>
+                        <div class="ar-case-logo-wrap ar-logo-white">
+                            <img src="assets/green-is-good-logo-hq.png" alt="Green is Good" class="ar-case-logo">
+                        </div>
+                    </div>
+                    <div class="ar-case-body">
+                        <div class="ar-case-before">
+                            <span class="ar-label">ANTES</span>
+                            <p>Marca sin identidad · $0 en ventas · $1.000 USD de presupuesto inicial</p>
+                        </div>
+                        <div class="ar-case-arrow">↓ &nbsp;5 meses aplicando el método&nbsp; ↓</div>
+                        <div class="ar-case-after">
+                            <span class="ar-label">DESPUÉS</span>
+                            <div class="ar-case-stat">$<span class="counter" data-target="200">0</span>K <span class="ar-stat-usd">USD</span></div>
+                            <p class="ar-case-stat-sub">en facturación · construida desde cero</p>
+                        </div>
+                    </div>
+                    <div class="ar-case-social">
+                        <svg class="ar-ig-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig1)" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="url(#ig1)" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="url(#ig1)"/><defs><linearGradient id="ig1" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#F9CE34"/><stop offset="0.4" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/></linearGradient></defs></svg>
+                        <div class="ar-case-ig-info">
+                            <p class="ar-case-ig-handle">@greenisgood.arg</p>
+                            <p class="ar-case-ig-followers">34.7K seguidores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GÜM -->
+                <div class="ar-case-card fade-in">
+                    <div class="ar-case-header-centered">
+                        <div class="ar-case-tag">🇦🇷 Caso Argentina</div>
+                        <div class="ar-case-logo-wrap ar-logo-dark">
+                            <img src="assets/gum-logo2.webp" alt="GÜM" class="ar-case-logo">
+                        </div>
+                    </div>
+                    <div class="ar-case-body">
+                        <div class="ar-case-before">
+                            <span class="ar-label">ANTES</span>
+                            <p>Primera creatina en gummies del país · $0 en ventas · sin equipo</p>
+                        </div>
+                        <div class="ar-case-arrow">↓ &nbsp;2 meses aplicando el método&nbsp; ↓</div>
+                        <div class="ar-case-after">
+                            <span class="ar-label">DESPUÉS</span>
+                            <div class="ar-case-stat">$<span class="counter" data-target="100">0</span>K <span class="ar-stat-usd">USD</span></div>
+                            <p class="ar-case-stat-sub">40% de margen · en solo 2 meses</p>
+                        </div>
+                    </div>
+                    <div class="ar-case-social">
+                        <svg class="ar-ig-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig2)" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="url(#ig2)" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="url(#ig2)"/><defs><linearGradient id="ig2" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#F9CE34"/><stop offset="0.4" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/></linearGradient></defs></svg>
+                        <div class="ar-case-ig-info">
+                            <p class="ar-case-ig-handle">@gum.argentina</p>
+                            <p class="ar-case-ig-followers">16.1K seguidores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sunkids strip -->
+            <div class="sunkids-strip fade-in">
+                <p class="sunkids-strip-label">// EL TRACK RECORD DEL CREADOR DEL MÉTODO</p>
+                <div class="sunkids-strip-inner">
+                    <img src="assets/sunkids-logo.avif" alt="Sunkids" class="sunkids-strip-logo">
+                    <div class="sunkids-strip-stats">
+                        <div class="strip-stat">
+                            <span class="strip-num">$14.5M <small>USD</small></span>
+                            <span class="strip-desc">Facturación total</span>
+                        </div>
+                        <div class="strip-stat">
+                            <span class="strip-num">427K</span>
+                            <span class="strip-desc">Seguidores</span>
+                        </div>
+                        <div class="strip-stat">
+                            <span class="strip-num">500K+</span>
+                            <span class="strip-desc">Clientes satisfechos</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="sunkids-strip-text">La misma metodología que llevó a Sunkids a ser la marca líder de anteojos infantiles de Brasil · ahora aplicada en Argentina.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDOS -->
+    <section class="section-contenidos" id="contenidos">
+        <div class="container">
+            <p class="section-label fade-in">// CONTENIDOS</p>
+            <h2 class="headline fade-in">Al entrar al Método Marca, vas a tener acceso a 12 módulos completos:</h2>
+            <ul class="modules-list fade-in">
+                <li><span class="module-number">01.</span><span><span class="module-title">Fundamentos</span> <span class="module-desc">La diferencia entre un negocio genérico y una marca que escala</span></span></li>
+                <li><span class="module-number">02.</span><span><span class="module-title">Productos que venden millones</span> <span class="module-desc">Validación, proveedores, pricing</span></span></li>
+                <li><span class="module-number">03.</span><span><span class="module-title">CODE: Conectar</span> <span class="module-desc">Esencia, arquetipos, storytelling con el Círculo Dorado</span></span></li>
+                <li><span class="module-number">04.</span><span><span class="module-title">CODE: Ofertar</span> <span class="module-desc">Value stacking, psicología de precios, oferta irresistible</span></span></li>
+                <li><span class="module-number">05.</span><span><span class="module-title">CODE: Diferenciar</span> <span class="module-desc">Prueba social, influencers, comunidad, experiencia</span></span></li>
+                <li><span class="module-number">06.</span><span><span class="module-title">Producción de Contenido</span> <span class="module-desc">UGC, creativos, landing pages, copywriting, email</span></span></li>
+                <li><span class="module-number">07.</span><span><span class="module-title">Recuperación de ventas con IA</span> <span class="module-desc">30-45% de carritos recuperados con WhatsApp</span></span></li>
+                <li><span class="module-number">08.</span><span><span class="module-title">CODE: Escalar</span> <span class="module-desc">Meta Ads, Google Ads, analytics, Black Friday</span></span></li>
+                <li><span class="module-number">09.</span><span><span class="module-title">Clases en vivo mensuales</span> <span class="module-desc">Acompañamiento estratégico en tiempo real</span></span></li>
+                <li><span class="module-number">10.</span><span><span class="module-title">Bonus: Proveedores exclusivos</span> <span class="module-desc">Acceso a red de proveedores de confianza</span></span></li>
+                <li><span class="module-number">11.</span><span><span class="module-title">Bonus: Pasarelas y herramientas</span> <span class="module-desc">Setup completo de la operación</span></span></li>
+                <li><span class="module-number">12.</span><span><span class="module-title">Bonus: Soporte dedicado</span> <span class="module-desc">Comunidad privada y acceso a respuestas</span></span></li>
+            </ul>
+            <a href="#oferta" class="cta-btn fade-in">QUIERO TENER ACCESO A TODO ESTO</a>
+        </div>
+    </section>
+
+    <!-- MARQUEE TICKER -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span class="marquee-text">MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · </span>
+            <span class="marquee-text">MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · MÉTODO MARCA · </span>
+        </div>
+    </div>
+
+    <!-- ANIBAL -->
+    <section class="section-anibal">
+        <div class="container">
+            <div class="anibal-grid">
+                <div class="anibal-image fade-in"><img src="assets/anibal.png" alt="Anibal Riveros" style="width:100%;height:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 0 30px rgba(41,144,240,0.12));"></div>
+                <div class="fade-in">
+                    <p class="section-label">// QUIÉN ES ANIBAL</p>
+                    <h2 class="headline">Aprendé de quien lo construyó de verdad</h2>
+                    <p class="body-text">Anibal Riveros no enseña desde una pizarra. Enseña desde los negocios que construyó. Cada módulo del Método Marca viene de decisiones reales · algunas que funcionaron y otras que fallaron · en mercados reales, con plata real en juego.</p>
+                    <ul class="credentials-list">
+                        <li>🇧🇷 Co-fundador de Sunkids · e-commerce escalado a más de $14.5M USD en Brasil</li>
+                        <li>🌱 Creó Green is Good de $0 a +$200K USD en menos de 5 meses como caso documentado</li>
+                        <li>🇦🇷 Co-fundador de GÜM · primera creatina en gummies de Argentina</li>
+                        <li>🤖 Pionero en recuperación de ventas con IA en e-commerce latinoamericano</li>
+                        <li>📚 Creador del Método CODE · el sistema detrás de las tres marcas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section-depoimentos" id="resultados-alumnos">
+        <div class="container">
+            <p class="section-label fade-in">// RESULTADOS</p>
+            <h2 class="headline fade-in">Lo que dicen los +2.000 alumnos en Brasil</h2>
+            <p class="testimonials-sub fade-in">Este método ya está transformando negocios en Brasil. Estos son algunos de los resultados reales.</p>
+            <div class="testimonials-grid testimonials-grid-3">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-header">
+                        <img src="assets/bernardo-simou.jpg" alt="Bernardo" class="testimonial-photo">
+                        <div>
+                            <div class="testimonial-name">Bernardo</div>
+                            <div class="testimonial-role">PeachUp · Brasil 🇧🇷</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Nuestra empresa no llegaba a los $200 USD por mes. En exactamente 90 días, aplicando el plan que armamos con Anibal y Pietro, llegamos al millón en facturación. Si estás dudando, entrá con los ojos cerrados. Fue la mejor decisión de mi vida."</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-header">
+                        <img src="assets/gustavo.jpg" alt="Gustavo" class="testimonial-photo">
+                        <div>
+                            <div class="testimonial-name">Gustavo</div>
+                            <div class="testimonial-role">Altos Calçados · Brasil 🇧🇷</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Facturábamos unos $15-20K USD por mes pero de forma totalmente desorganizada. Después de aplicar el método, escalamos 10 a 20 veces más. Pasamos de ser una tiendita a ser una empresa y una marca real con visión de largo plazo."</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-header">
+                        <img src="assets/kevin.jpg" alt="Kevin" class="testimonial-photo">
+                        <div>
+                            <div class="testimonial-name">Kevin</div>
+                            <div class="testimonial-role">E-commerce · Brasil 🇧🇷</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Era dropshipper, los procesos no seguían el ritmo del crecimiento. Conocí a Anibal, tomé una marca desde cero y la llevamos a millones de dólares en ventas en el mismo año. Si tenés desorden en tu operación, este método es exactamente lo que necesitás."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-faq" id="faq">
+        <div class="container">
+            <p class="section-label fade-in">// FAQ</p>
+            <h2 class="headline fade-in">Preguntas frecuentes</h2>
+            <div class="faq-list fade-in">
+                <div class="faq-item">
+                    <div class="faq-question">¿Para quién es el Método Marca?</div>
+                    <div class="faq-answer">
+                        <p>Para emprendedores que ya tienen o quieren crear un e-commerce y buscan construir una marca real · con identidad, posicionamiento y escalabilidad · no solo vender productos genéricos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Necesito tener experiencia previa?</div>
+                    <div class="faq-answer">
+                        <p>No. El método está diseñado para funcionar tanto para quienes están empezando desde cero como para quienes ya venden pero no consiguen escalar de manera consistente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo funciona el acceso?</div>
+                    <div class="faq-answer">
+                        <p>Inmediatamente después de la compra recibís un email con los accesos. El contenido está disponible 24/7 y podés avanzar a tu ritmo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Tiene garantía?</div>
+                    <div class="faq-answer">
+                        <p>Sí. 7 días de garantía total. Si en 7 días no ves valor real en lo que aprendiste, te devolvemos el 100% de tu dinero. Sin preguntas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Hay clases en vivo?</div>
+                    <div class="faq-answer">
+                        <p>Sí. Además de todo el contenido grabado, hay clases en vivo mensuales con Anibal para acompañamiento estratégico y respuesta a preguntas.</p>
+                    </div>
+                </div>
+                <div class="faq-item faq-idioma">
+                    <div class="faq-question">¿Las clases son en español?</div>
+                    <div class="faq-answer">
+                        <p>El contenido grabado fue desarrollado originalmente en Brasil · el mismo material que ya transformó más de 2.000 emprendedores brasileños. La versión completa en español está en producción y los alumnos que entren ahora recibirán acceso automático en cuanto esté disponible, sin costo adicional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA FINAL -->
+    <section class="section-oferta" id="oferta">
+        <div class="container">
+            <p class="section-label fade-in">// PRECIO DE LANZAMIENTO ARGENTINA 🇦🇷</p>
+
+            <div class="idioma-block fade-in">
+                <p class="idioma-title">🇧🇷 → 🇦🇷 &nbsp;Sobre el idioma del contenido</p>
+                <p class="idioma-text">Las clases grabadas están en portugués brasileño · el mismo idioma en que Anibal construyó Sunkids hasta $14.5M USD. La versión 100% en español está en producción activa. <strong>Los alumnos que entran ahora reciben ambas versiones sin costo adicional.</strong> Cuando el curso en español esté listo, el precio sube.</p>
+            </div>
+
+            <div class="price-anchor fade-in">
+                <div class="anchor-item"><span class="anchor-label">Una consultoría de estrategia de marca</span><span class="anchor-price strikethrough">$500–2.000 USD / mes</span></div>
+                <div class="anchor-item anchor-highlight"><span class="anchor-label">✦ Método Marca completo · acceso de por vida</span><span class="anchor-price gradient-text">$49.90 USD</span></div>
+            </div>
+
+            <p class="launch-context fade-in">⏳ Precio de lanzamiento válido hasta el <strong>30 de abril</strong>. Después sube · sin excepciones.</p>
+            <h2 class="headline fade-in">Todo esto por <span class="gradient-text">$49.90 USD</span></h2>
+
+            <div class="checklist-grid fade-in">
+                <div class="checklist-item"><span class="check-mark">✓</span> Acceso anticipado + versión en español incluida cuando esté disponible</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Acceso inmediato a los 12 módulos completos</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> El caso Green is Good documentado en tiempo real</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Clases en vivo mensuales con Anibal Riveros</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Actualizaciones permanentes sin costo adicional</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Comunidad privada de emprendedores de marca</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Bonus: red de proveedores exclusivos</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Bonus: setup completo de herramientas</div>
+                <div class="checklist-item"><span class="check-mark">✓</span> Garantía total de 7 días sin preguntas</div>
+            </div>
+
+            <div class="guarantee-block fade-in">
+                <p>🔒 Garantía de 7 días · Si en 7 días no ves valor real, te devolvemos el 100% de tu dinero. Sin preguntas. Sin burocracia.</p>
+            </div>
+
+            <a href="https://pay.kiwify.com/BXbPqdV" target="_blank" rel="noopener" class="cta-btn cta-btn-large fade-in kiwify-cta">QUIERO ACCESO AHORA → $49.90 USD</a>
+
+            <div class="trust-bar fade-in">🔒 Pago 100% seguro · ✅ Acceso inmediato · 🔄 Garantía de 7 días</div>
+
+            <p class="price-note fade-in">Precio válido hasta el 30 de abril · Después sube a $87 USD.</p>
+        </div>
+    </section>
+
+    <!-- STICKY CTA BAR -->
+    <div class="sticky-cta-bar" id="stickyCta">
+        <div class="sticky-cta-inner">
+            <div class="sticky-cta-info">
+                <span class="sticky-cta-name">Método Marca</span>
+                <span class="sticky-cta-price">$49.90 USD <span class="sticky-cta-note">· hasta abril</span></span>
+            </div>
+            <a href="https://pay.kiwify.com/BXbPqdV" target="_blank" rel="noopener" class="sticky-cta-btn kiwify-cta">QUIERO ACCESO →</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Método Marca · Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu
+                    document.querySelector('.nav-links').classList.remove('open');
+                }
+            });
+        });
+
+        // ========== COUNTER ANIMATION ==========
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.dataset.animated) {
+                    entry.target.dataset.animated = 'true';
+                    const target = parseInt(entry.target.dataset.target);
+                    const duration = 2000;
+                    const steps = 60;
+                    const increment = target / steps;
+                    let current = 0;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            entry.target.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current);
+                        }
+                    }, duration / steps);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // ========== FADE IN ANIMATION ==========
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        fadeElements.forEach(el => fadeObserver.observe(el));
+
+        // ========== FAQ ACCORDION ==========
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                // Toggle current
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // ========== NAVBAR SCROLL ==========
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(3, 5, 9, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(3, 5, 9, 0.95)';
+            }
+        });
+
+        // Sticky CTA bar
+        const stickyCta = document.getElementById('stickyCta');
+        const heroSection = document.querySelector('.hero');
+        const ofertaSection = document.getElementById('oferta');
+
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            const heroBottom = heroSection ? heroSection.offsetTop + heroSection.offsetHeight : 600;
+            const ofertaTop = ofertaSection ? ofertaSection.offsetTop - 80 : Infinity;
+            const ofertaBottom = ofertaSection ? ofertaSection.offsetTop + ofertaSection.offsetHeight : Infinity;
+
+            if (scrollY > heroBottom && scrollY < ofertaBottom) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        // Meta Pixel · AddToCart ao clicar em qualquer CTA de compra
+        document.querySelectorAll('.kiwify-cta, .cta-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'AddToCart', {
+                        content_name: 'Método Marca',
+                        content_ids: ['metodo-marca'],
+                        content_type: 'product',
+                        value: 49,
+                        currency: 'USD'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
